@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>文学作品における機械翻訳と人間翻訳の比較</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main>
+    <section class="hero" id="top">
+      <div class="hero-content">
+        <p class="eyebrow">研究テーマ紹介</p>
+        <h1>AIは文学の行間を読めるのか</h1>
+        <p class="hero-subtitle">機械翻訳と人間翻訳を、感情分析とテキストマイニングで比較した研究</p>
+        <button class="primary-button" id="scroll-overview">研究の概要を見る</button>
+      </div>
+
+      <div class="hero-visual" aria-hidden="true">
+        <div class="book">
+          <div class="book-cover"></div>
+          <div class="book-pages"></div>
+        </div>
+        <div class="ai-node ai-node-1"></div>
+        <div class="ai-node ai-node-2"></div>
+        <div class="ai-node ai-node-3"></div>
+        <div class="analysis-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="overview">
+      <div class="section-inner">
+        <h2>研究の背景</h2>
+        <p>機械翻訳は日常でも便利に使えるようになった。しかし、文学作品では単に意味を伝えるだけではなく、感情や文体、余韻といった「行間の読み取り」が重要になる。この研究では、なぜ文学翻訳を丁寧に扱う必要があるのかを定量的な結果に基づいて明らかにする。
+
+        </p>
+      </div>
+    </section>
+
+    <section class="section section-light" id="questions">
+      <div class="section-inner">
+        <h2>研究で明らかにしたい問い</h2>
+        <div class="card-grid">
+          <article class="card card-hidden">
+            <h3>プロ翻訳と機械翻訳には、定量的にどのような差があるのか</h3>
+            <p>数値で比較することで、翻訳の違いを客観的に理解する。</p>
+          </article>
+          <article class="card card-hidden">
+            <h3>機械翻訳が苦手とする文学表現には、どのようなパターンがあるのか</h3>
+            <p>表現の種類ごとに、機械翻訳がどこでつまずくのかを探る。</p>
+          </article>
+          <article class="card card-hidden">
+            <h3>機械翻訳が人間翻訳に近づくには、何が必要なのか</h3>
+            <p>AIがより自然な訳になるために必要な要素を考える。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="methods">
+      <div class="section-inner">
+        <h2>分析方法</h2>
+        <ol class="steps">
+          <li class="step card-hidden">文学作品の日本語原文・プロ翻訳・機械翻訳文を用意</li>
+          <li class="step card-hidden">Pythonで感情分析を行う</li>
+          <li class="step card-hidden">頻出単語分析を行う</li>
+          <li class="step card-hidden">プロ翻訳と機械翻訳の違いを比較する</li>
+          <li class="step card-hidden">差が大きい文章を言語的に考察する</li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section section-light" id="points">
+      <div class="section-inner">
+        <h2>研究のポイント</h2>
+        <div class="card-grid">
+          <article class="card card-hidden">
+            <h3>感情の流れを数値で見る</h3>
+            <p>文章の感情変化を可視化し、機械翻訳とプロの翻訳がどのように異なるのかを明らかにする。</p>
+          </article>
+          <article class="card card-hidden">
+            <h3>単語の使われ方を比較する</h3>
+            <p>頻出単語を分析して、訳文の表現傾向を比較する。</p>
+          </article>
+          <article class="card card-hidden">
+            <h3>誤訳や訳抜けが起きやすい表現を探す</h3>
+            <p>実際の訳例から、機械翻訳の弱点を具体的に見つける。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-light section-result" id="results">
+      <div class="section-inner">
+        <h2>具体的な研究成果</h2>
+        <p class="lead">ここでは、小林多喜二『蟹工船』を対象にした分析結果の一部を紹介する。感情分析と訳例の比較から、機械翻訳が擬音語や方言的な表現を苦手とする傾向が見えてきた。</p>
+        <div class="result-grid">
+          <article class="card card-hidden result-block">
+            <h3>感情分析の結果</h3>
+            <p class="result-text">『蟹工船』では、プロの翻訳と機械翻訳の間で「怒り」の感情スコアに差がみられた。同じ物語でも、翻訳の仕方によって感情の見え方が変わることが確認できた。</p>
+            <div class="emotion-result-grid">
+              <article class="emotion-compare-card card card-hidden">
+                <div class="emotion-card-header">
+                  <h3>10〜20%区間の怒り</h3>
+                  <span class="emotion-diff">差：23</span>
+                </div>
+                <div class="emotion-bars">
+                  <div class="emotion-bar-row">
+                    <div class="emotion-bar-label">
+                      <span>プロ翻訳</span>
+                      <strong>53</strong>
+                    </div>
+                    <div class="emotion-bar-track">
+                      <div class="emotion-bar emotion-bar-human" style="width: 100%;"></div>
+                    </div>
+                  </div>
+                  <div class="emotion-bar-row">
+                    <div class="emotion-bar-label">
+                      <span>機械翻訳</span>
+                      <strong>30</strong>
+                    </div>
+                    <div class="emotion-bar-track">
+                      <div class="emotion-bar emotion-bar-machine" style="width: 57%;"></div>
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <article class="emotion-compare-card card card-hidden">
+                <div class="emotion-card-header">
+                  <h3>50〜60%区間の怒り</h3>
+                  <span class="emotion-diff">差：25</span>
+                </div>
+                <div class="emotion-bars">
+                  <div class="emotion-bar-row">
+                    <div class="emotion-bar-label">
+                      <span>プロ翻訳</span>
+                      <strong>57</strong>
+                    </div>
+                    <div class="emotion-bar-track">
+                      <div class="emotion-bar emotion-bar-human" style="width: 100%;"></div>
+                    </div>
+                  </div>
+                  <div class="emotion-bar-row">
+                    <div class="emotion-bar-label">
+                      <span>機械翻訳</span>
+                      <strong>32</strong>
+                    </div>
+                    <div class="emotion-bar-track">
+                      <div class="emotion-bar emotion-bar-machine" style="width: 56%;"></div>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <p class="emotion-summary">この結果から、同じ物語でも翻訳の仕方によって、感情の見え方が変わることが確認できた。特にこの例では、プロ翻訳の方が「怒り」の感情を強く検出された。</p>
+          </article>
+
+          <article class="card card-hidden result-block">
+            <h3>訳例の比較</h3>
+            <p class="result-text">『蟹工船』の短い原文例を使い、人間翻訳と機械翻訳の違いをまとめた。</p>
+            <div class="quote-card">
+              <p class="quote-label">原文</p>
+              <blockquote>「が、次の瞬間、こっちがアプ、アプでもするように、谷底に転落して行った。」</blockquote>
+            </div>
+            <div class="comparison-cards">
+              <article class="comparison-card">
+                <p class="comparison-label">人間翻訳の特徴</p>
+                <p>『アプ、アプ』を息苦しさや身体感覚に近い表現として捉え、船が波間に落ち込む緊迫感を表そうとしている。</p>
+              </article>
+              <article class="comparison-card">
+                <p class="comparison-label">機械翻訳の特徴</p>
+                <p>『アプ、アプ』を上下運動のように捉えて翻訳し、船が溺れかけるような比喩的な感覚が弱くなっている。</p>
+              </article>
+            </div>
+          </article>
+
+          <article class="card card-hidden result-block">
+            <h3>考察</h3>
+            <p class="result-text">これらの結果から、機械翻訳は擬音語が作る感覚や比喩を読む必要がある場面でつまずきやすいことが分かる。『蟹工船』には、方言、労働者の口調、身体感覚に近い表現が多く含まれているため、機械翻訳にとって難しい題材だと考えられる。</p>
+            <div class="insight-box">
+              <span class="tag">改善点</span>
+              <p>機械翻訳は単語の意味を直訳するだけでなく、響きや場面の感覚を読み取る力が必要。</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="patterns">
+      <div class="section-inner">
+        <h2>機械翻訳が苦手な4つのパターンを発見</h2>
+        <div class="card-grid">
+          <article class="card card-hidden">
+            <h3>擬音語型</h3>
+            <p>「バチン」「ビクン」など、音や身体感覚を伴う表現。機械翻訳では臨場感や緊張感が弱くなることがある。</p>
+          </article>
+          <article class="card card-hidden">
+            <h3>談話型</h3>
+            <p>前後の会話や文脈を読まないと意味が決まらない表現。機械翻訳では会話全体の流れを外すことがある。</p>
+          </article>
+          <article class="card card-hidden">
+            <h3>知識型</h3>
+            <p>文化的背景、古語、慣用表現、作品世界の知識が必要な表現。機械翻訳では直訳に寄りやすい。</p>
+          </article>
+          <article class="card card-hidden">
+            <h3>発言型</h3>
+            <p>台詞の口調、皮肉、人物らしさが重要な表現。機械翻訳ではキャラクターの声を再現しきれないことがある。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-conclusion" id="conclusion">
+      <div class="section-inner">
+        <h2>研究の結論</h2>
+        <p class="lead">分析を通して、機械翻訳は意味をある程度正確に訳せる一方で、文学作品に含まれる感情、文脈、行間、筆者の感性を読み取る場面では課題が残ることが分かった。</p>
+        <div class="conclusion-grid">
+          <article class="conclusion-card card card-hidden">
+            <h3>機械翻訳は、筆者の感性が表れた文章が苦手</h3>
+            <p>文学作品には、単語の意味だけではなく、文体、比喩、間、感情の揺れが含まれている。分析の結果、機械翻訳はこうした筆者の感性が強く表れる文章で、意味や雰囲気を十分に再現しきれないことが分かった。</p>
+          </article>
+          <article class="conclusion-card card card-hidden">
+            <h3>行間を読む文章が苦手</h3>
+            <p>人間は会話の流れや状況から言葉の意味を補って理解する。しかし、機械翻訳は単独の文として意味を処理しやすく、前後の文脈や人物関係を踏まえた解釈が弱くなることがある。</p>
+          </article>
+          <article class="conclusion-card card card-hidden">
+            <h3>単語の選び方だけで読者の感じ方が変わる</h3>
+            <p>翻訳では、似た意味の単語を選ぶだけでも、読者が受け取る印象や物語の時間の流れが変わる。細かなニュアンスを弱めすぎたり、逆に強めすぎたりすることは、文学作品を読むうえで大きな違いになる。</p>
+          </article>
+        </div>
+        <div class="highlight-box">
+          <p class="highlight-label">Point</p>
+          <p class="highlight-text">AI翻訳に必要なのは、言葉の意味だけでなく、文脈と感情を読む力。</p>
+          <p class="highlight-note">機械翻訳が人間翻訳に近づくためには、前後の文脈を考慮する文脈依存機械翻訳と、状況や非言語情報を扱うマルチモーダル機械翻訳の発展が重要だと結論づけた。</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-light section-limits" id="limitations">
+      <div class="section-inner">
+        <h2>研究の限界と今後</h2>
+        <p class="lead">この研究では一定の結論を得ることができたが、検証にはいくつかの課題も残った。研究の信頼性を高めるためには、分析方法やデータをさらに改善していく必要がある。</p>
+        <div class="limit-grid">
+          <article class="limit-card card card-hidden">
+            <h3>感情分析の精度</h3>
+            <p>感情分析は、文脈を十分に理解せず、単語やフレーズ単位で感情を判定してしまうことがある。そのため、本来は「喜び」と考えられる文で「怒り」が出るなど、想定と異なる結果が出る場合があった。</p>
+          </article>
+          <article class="limit-card card card-hidden">
+            <h3>主観の影響</h3>
+            <p>プロ翻訳を基準として比較したため、研究者自身の主観や先入観が分析に影響した可能性がある。翻訳の良し悪しを判断するには、複数人による評価や、より客観的な基準が必要。</p>
+          </article>
+          <article class="limit-card card card-hidden">
+            <h3>データの不足</h3>
+            <p>今回扱った作品数には限りがあった。より信頼性の高い結果を得るためには、時代、ジャンル、文体の異なる多様な文学作品をさらに分析する必要がある。</p>
+          </article>
+          <article class="limit-card card card-hidden">
+            <h3>専門知識の不足</h3>
+            <p>翻訳の質や文学的ニュアンスを深く考察するには、言語学、翻訳論、文学研究に関するより専門的な知識が必要だ。今後は専門知識を深めながら、分析の精度を高めていくことが求められる。</p>
+          </article>
+        </div>
+        <div class="future-box">
+          <p class="future-label">今後の展望</p>
+          <p>より多くの文学作品を対象に分析を広げ、文学作品に特化した機械翻訳の評価システムを構築することを目指す。</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="more">
+      <div class="section-inner">
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
