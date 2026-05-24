@@ -1,17 +1,18 @@
-// ボタンを押すと「研究の概要」セクションへなめらかにスクロールする処理
-const overviewButton = document.getElementById('scroll-overview');
-const overviewSection = document.getElementById('overview');
-const resultsButton = document.getElementById('scroll-results');
-const resultsSection = document.getElementById('results');
+// ページ内リンクをクリックしたときに、対象セクションへスムーススクロールする処理
+document.querySelectorAll('a[href^="#"]').forEach((link) => {
+  link.addEventListener('click', (event) => {
+    const targetId = link.getAttribute('href');
+    const target = document.querySelector(targetId);
 
-overviewButton.addEventListener('click', () => {
-  overviewSection.scrollIntoView({ behavior: 'smooth' });
-});
+    if (!target) return;
 
-resultsButton.addEventListener('click', () => {
-  if (resultsSection) {
-    resultsSection.scrollIntoView({ behavior: 'smooth' });
-  }
+    event.preventDefault();
+
+    target.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start'
+    });
+  });
 });
 
 // ページ内のカードを下からふわっと表示させるアニメーション
