@@ -1,9 +1,17 @@
 // ボタンを押すと「研究の概要」セクションへなめらかにスクロールする処理
 const overviewButton = document.getElementById('scroll-overview');
 const overviewSection = document.getElementById('overview');
+const resultsButton = document.getElementById('scroll-results');
+const resultsSection = document.getElementById('results');
 
 overviewButton.addEventListener('click', () => {
   overviewSection.scrollIntoView({ behavior: 'smooth' });
+});
+
+resultsButton.addEventListener('click', () => {
+  if (resultsSection) {
+    resultsSection.scrollIntoView({ behavior: 'smooth' });
+  }
 });
 
 // ページ内のカードを下からふわっと表示させるアニメーション
